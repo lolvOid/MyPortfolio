@@ -1,20 +1,10 @@
+
+
 $(function () {
     $('.title').textillate();
     $('.subtitle').textillate();
 })
-$(function () {
-    $.scrollify({
-        section: ".scrollsection",
-        easing: "easeIn",
-        scrollSpeed: 350,
-        offset : 1,
-        scrollbars: false,
-        setHeights: false,
-        overflowScroll: true,
-        updateHash: false,
-        touchScroll: false
-    });
-});
+
 // As A Vanilla JavaScript Plugin
 var gallery = new SimpleLightbox('.gallery div a', {
     /* options */
@@ -91,3 +81,6 @@ var gallery = $('.gallery a').simpleLightbox({
     disableRightClick: true
 
 });
+
+
+

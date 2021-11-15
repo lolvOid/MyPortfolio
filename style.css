@@ -1,7 +1,23 @@
 html {
     scroll-behavior: smooth;
-
+    width: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
+@-moz-document url-prefix() {
+    /* Disable scrollbar Firefox */
+    html {
+        scrollbar-width: none;
+    }
+  }
+  
+  html::-webkit-scrollbar {
+    /* Disable scrollbar Chrome/Safari/Webkit */
+    width: 0px;
+    background: transparent;
+  }
+
+  
 
 @font-face {
     font-family: 'Cocogoose';
@@ -64,6 +80,7 @@ html {
 body {
     background-color: #222438;
     margin: 0;
+    padding: 0;
 
 }
 
@@ -173,16 +190,16 @@ body {
     z-index: -2;
 }
 
-.bunnylogo{
+.bunnylogo {
 
-position: absolute;
-margin-top: 250px;
-left: calc(50% - 89.5px) !important;
-z-index: 99;
+    position: absolute;
+    margin-top: 250px;
+    left: calc(50% - 89.5px) !important;
+    z-index: 99;
 }
 
-.bunnyH span{
-     
+.bunnyH span {
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
@@ -195,11 +212,12 @@ z-index: 99;
     text-transform: uppercase;
 
 
-color: red;
+    color: red;
     z-index: 999;
 }
-.bunnyH{
-    
+
+.bunnyH {
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
@@ -212,10 +230,11 @@ color: red;
     text-transform: uppercase;
 
 
-color: red;
+    color: red;
     z-index: 999;
 }
-.bunnyTitle{
+
+.bunnyTitle {
     margin-top: 10% !important;
     font-family: "Roboto";
     font-size: 1em;
@@ -239,7 +258,8 @@ color: red;
 
     background-size: cover;
 }
-.fastH{
+
+.fastH {
     font-size: 70px;
     font-family: "COCOGOOSE";
     background-color: rgb(255, 255, 255);
@@ -248,9 +268,10 @@ color: red;
     line-height: 1.3em;
     padding: 0 20px;
     text-align: left;
-    
-    
+
+
 }
+
 .port-section {
     padding-top: 10rem;
     height: 800px;
@@ -288,12 +309,19 @@ color: red;
     border-width: 2px;
     width: 200px;
     height: 100px;
-  background-color: red;
-  border-radius: 0;
+    background-color: red;
+    border-radius: 0;
+}
+
+.bunnybtn:hover{
+    background-color: white;
+    border-color: red;
+    border-width: 2px;
 }
 
 .port-section a:hover {
-    color: wheat;
+    color: red;
+    transition: 0.3s;
 }
 
 .projects-section {
@@ -311,26 +339,32 @@ color: red;
 .contact-section {
     background-color: #1a1a1a !important;
     padding-top: 5rem;
-  }
-  .contact-section .card {
+}
+
+.contact-section .card {
     border: 0;
     border-bottom: 0.25rem solid #64a19d;
-  }
-  .contact-section .card h4, .contact-section .card .h4 {
+}
+
+.contact-section .card h4,
+.contact-section .card .h4 {
     font-size: 0.8rem;
     font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     text-transform: uppercase;
     letter-spacing: 0.15rem;
-  }
-  .contact-section .card hr {
+}
+
+.contact-section .card hr {
     border-color: #64a19d;
     border-width: 0.25rem;
     width: 3rem;
-  }
-  .contact-section .social {
+}
+
+.contact-section .social {
     margin-top: 5rem;
-  }
-  .contact-section .social a {
+}
+
+.contact-section .social a {
     text-align: center;
     height: 3rem;
     width: 3rem;
@@ -338,66 +372,73 @@ color: red;
     border-radius: 100%;
     line-height: 3rem;
     color: rgba(255, 255, 255, 0.3);
-  }
-  .contact-section .social a:hover {
+}
+
+.contact-section .social a:hover {
     color: rgba(255, 255, 255, 0.5);
-  }
-  .contact-section .social a:active {
+}
+
+.contact-section .social a:active {
     color: #fff;
-  }
-  
-  .footer {
-      background-color: #000000;
+}
+
+.footer {
+    background-color: #000000;
     padding: 2rem 0;
-  }
+}
 
-  .project-section {
+.project-section {
     padding: 5rem 0;
-  }
-  .project-section .featured-text {
+}
+
+.project-section .featured-text {
     padding: 2rem;
-  }
-
-  .mlCharacter{
-      position: absolute;
-      
-  }
-  .icon{
-      width: 100px;
-  }
-  .me{
-     width: 100%;
-     padding-bottom: 10px;
-  }
-  
-  .float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:rgb(255, 255, 255);
-	color:rgb(27, 27, 27);
-	border-radius:50px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
 }
 
-.float1{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:120px;
-	right:40px;
-	background-color:rgb(255, 255, 255);
-	color:rgb(27, 27, 27);
-	border-radius:50px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
+.mlCharacter {
+    position: absolute;
+
 }
-.my-float{
-	margin-top:22px;
+
+.icon {
+    width: 100px;
 }
+
+.me {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(27, 27, 27);
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.float1 {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 120px;
+    right: 40px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(27, 27, 27);
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.my-float {
+    margin-top: 22px;
+}
+
 @media only screen and (max-width: 600px) {}
 
 @media only screen and (max-width: 768px) {}

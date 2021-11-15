@@ -1,0 +1,403 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
+@font-face {
+    font-family: 'Cocogoose';
+    src: url('fonts/Cocogoose-Light.woff2') format('woff2'),
+        url('fonts/Cocogoose-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'COCOGOOSESB';
+    src: url('fonts/COCOGOOSE-DemiBold.woff2') format('woff2'),
+        url('fonts/COCOGOOSE-DemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'CocogooseThin';
+    src: url('fonts/CocogoosePro-Thin.woff2') format('woff2'),
+        url('fonts/CocogoosePro-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'COCOGOOSEUL';
+    src: url('fonts/COCOGOOSE-UltraLight.woff2') format('woff2'),
+        url('fonts/COCOGOOSE-UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Cocogoose';
+    src: url('fonts/Cocogoose.woff2') format('woff2'),
+        url('fonts/Cocogoose.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CocogooseSemi';
+    src: url('fonts/CocogoosePro-SemiLight.woff2') format('woff2'),
+        url('fonts/CocogoosePro-SemiLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+    background-color: #222438;
+    margin: 0;
+
+}
+
+.wrapper {
+    background-color: #222438;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.main {
+    position: relative;
+    width: 100%;
+
+    min-height: 35rem;
+    color: white;
+
+    padding: 16.5rem 0;
+    background: url("img/headbg.png");
+    background-position: center 50%;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    z-index: -2;
+}
+
+
+.main h1,
+.main .h1 {
+
+    font-family: 'CocogooseSemi';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 90px;
+    line-height: 100%;
+    /* or 144px */
+
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+
+
+    z-index: 999;
+}
+
+.main h2,
+.main .h2 {
+    max-width: 100rem;
+    font-family: "COCOGOOSEUL";
+    font-style: normal;
+    font-weight: 250;
+    font-size: 40px;
+    line-height: 50%;
+
+
+    text-align: center;
+    letter-spacing: 0.085em;
+    text-transform: uppercase;
+    z-index: 999;
+}
+
+.main a,
+.main .a {
+    margin-top: 100px;
+    z-index: 999;
+}
+
+.headleftside {
+
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    mix-blend-mode: exclusion;
+    background: #FFA800;
+}
+
+.portrightwhite {
+    position: relative;
+    width: 50%;
+    height: 125%;
+    left: 0;
+
+    top: -160px;
+    background: #ffffff;
+    z-index: 15;
+    transform: scale(1);
+    transition: 0.1s ease;
+
+
+}
+
+
+
+.headrightside {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    top: 0px;
+    mix-blend-mode: exclusion;
+    background: #0038FF;
+    z-index: -2;
+}
+
+.bunnylogo{
+
+position: absolute;
+margin-top: 250px;
+left: calc(50% - 89.5px) !important;
+z-index: 99;
+}
+
+.bunnyH span{
+     
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 100%;
+    /* or 144px */
+    margin-top: 20%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+
+color: red;
+    z-index: 999;
+}
+.bunnyH{
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 100%;
+    /* or 144px */
+    margin-top: 20%;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+
+color: red;
+    z-index: 999;
+}
+.bunnyTitle{
+    margin-top: 10% !important;
+    font-family: "Roboto";
+    font-size: 1em;
+}
+
+.mouse {
+    position: absolute;
+    text-align: center !important;
+    left: calc(50% - 37.5px) !important;
+    top: 75%;
+    z-index: 999 !important;
+}
+
+.fast-section {
+    padding-top: 10rem;
+    height: 800px;
+    background: url("img/WP2.jpg");
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}
+.fastH{
+    font-size: 70px;
+    font-family: "COCOGOOSE";
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    color: black !important;
+    line-height: 1.3em;
+    padding: 0 20px;
+    text-align: left;
+    
+    
+}
+.port-section {
+    padding-top: 10rem;
+    height: 800px;
+    background: url("img/bunnysectoin.png");
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}
+
+.port-section p {
+
+    margin-bottom: 5rem;
+    color: red;
+    font-family: "Roboto";
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+
+    /* or 30px */
+
+    display: flex;
+
+}
+
+.port-section a,
+.port-section .bunnybtn {
+    margin-top: 20%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "Cocogoose";
+    line-height: 5em;
+    border-width: 2px;
+    width: 200px;
+    height: 100px;
+  background-color: red;
+  border-radius: 0;
+}
+
+.port-section a:hover {
+    color: wheat;
+}
+
+.projects-section {
+    position: relative;
+    padding: 2rem 0;
+    background-color: #222438 !important;
+}
+
+.projects-section .featured-text {
+    padding: 2rem;
+}
+
+
+
+.contact-section {
+    background-color: #1a1a1a !important;
+    padding-top: 5rem;
+  }
+  .contact-section .card {
+    border: 0;
+    border-bottom: 0.25rem solid #64a19d;
+  }
+  .contact-section .card h4, .contact-section .card .h4 {
+    font-size: 0.8rem;
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+  }
+  .contact-section .card hr {
+    border-color: #64a19d;
+    border-width: 0.25rem;
+    width: 3rem;
+  }
+  .contact-section .social {
+    margin-top: 5rem;
+  }
+  .contact-section .social a {
+    text-align: center;
+    height: 3rem;
+    width: 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    line-height: 3rem;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .contact-section .social a:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .contact-section .social a:active {
+    color: #fff;
+  }
+  
+  .footer {
+      background-color: #000000;
+    padding: 2rem 0;
+  }
+
+  .project-section {
+    padding: 5rem 0;
+  }
+  .project-section .featured-text {
+    padding: 2rem;
+  }
+
+  .mlCharacter{
+      position: absolute;
+      
+  }
+  .icon{
+      width: 100px;
+  }
+  .me{
+     width: 100%;
+     padding-bottom: 10px;
+  }
+  
+  .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:rgb(255, 255, 255);
+	color:rgb(27, 27, 27);
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.float1{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:120px;
+	right:40px;
+	background-color:rgb(255, 255, 255);
+	color:rgb(27, 27, 27);
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+.my-float{
+	margin-top:22px;
+}
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (max-width: 768px) {}

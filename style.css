@@ -543,3 +543,12 @@ top: -800px;
     padding: 155px 0;
     position: relative;
   }
+
+
+  #mobile{
+      color: black;
+      background-color: white;
+      width: 100%;
+      text-align: center;
+      height: 100vh;
+  }

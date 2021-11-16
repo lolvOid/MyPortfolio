@@ -23,3 +23,4 @@ const magnetic = new Magnetic(el, {
     rs: 0.7 // release speed
 });
 $('[data-magnetic]').each(function () {new Magnetic(this);});
+

@@ -1,12 +1,14 @@
-$(function(){
-    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+$(function () {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         // true for mobile device
-      $("#fullpage").hide();
-      $("#mobile").show();
-      }else{
+        $("#fullpage").hide();
+        $("#mobile").show();
+        console.log("is mobile");
+    } else {
         $("#mobile").hide();
-      $("#fullpage").show();
-      }
+        $("#fullpage").show();
+        console.log("not mobile");
+    }
 })
 $("#mobile").hide();
 

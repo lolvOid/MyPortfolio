@@ -269,6 +269,7 @@ if touchScroll is false - update index
         }
       },
       wheelHandler:function(e) {
+        e.preventDefault();
         if(disabled===true) {
           return true;
         } else if(settings.standardScrollElements) {
@@ -306,6 +307,8 @@ if touchScroll is false - update index
 
 
         if(locked) {
+
+          e.preventDefault();
           return false;
         }
         if(delta<0) {

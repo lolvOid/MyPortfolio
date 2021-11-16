@@ -8,7 +8,7 @@ $(function(){
       $("#fullpage").show();
       }
 })
-
+$("#mobile").hide();
 
 $(function () {
     $('body').moombaPreloader({

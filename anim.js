@@ -12,7 +12,9 @@ $(function () {
 })
 $("#mobile").hide();
 
+
 $(function () {
+    
     $('body').moombaPreloader({
 
         'type': 2, // Rectangle(1), Square(2)
@@ -113,3 +115,4 @@ var gallery = $('.gallery a').simpleLightbox({
     disableRightClick: true
 
 });
+
